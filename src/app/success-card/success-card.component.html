@@ -1,0 +1,11 @@
+<angular-inheritance-card>
+  <div header>
+    <h3>✅ {{ cardHeading }}</h3>
+    <button (click)="togglePanel()">{{ isExpanded ? 'Hide' : 'Show' }}</button>
+  </div>
+  <div body *ngIf="isExpanded">
+    <p class="alert">{{ cardDescription }}</p>
+    <p>Card Type: {{ getCardType() }}</p>
+  </div>
+  <div footer>{{ cardFooter }}</div>
+</angular-inheritance-card>
