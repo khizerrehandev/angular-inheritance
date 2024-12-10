@@ -1,2 +1,2 @@
 ## Run Command:
-- nx run angular-inheritance:serve:development
+- npx nx run angular-inheritance:serve:development
